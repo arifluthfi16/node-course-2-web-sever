@@ -40,9 +40,9 @@ app.get('/', (req,res) => { //Setup Handler for http get request
     });
 });
 
-app.get("/maintence",(req,res)=>{
-    res.render("maintence.hbs");
-})
+// app.get("/maintence",(req,res)=>{
+//     res.render("maintence.hbs");
+// })
 
 app.get("/", (req,res)=>{
     res.render("home.hbs");
