@@ -41,8 +41,11 @@ app.get('/', (req,res) => { //Setup Handler for http get request
 //     res.render("maintence.hbs");
 // })
 
-app.get("/", (req,res)=>{
-    res.render("home.hbs");
+app.get("/project", (req,res)=>{
+    res.render("project.hbs",{
+        pageTitle: 'Project Page',
+        welcomeMessage: 'Welcome to project Page'
+    });
 })
 
 app.get("/about", (req,res) => {
